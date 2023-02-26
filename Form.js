@@ -23,6 +23,48 @@ window.onload = function () {
             showresult.innerHTML="No it's not a palindrome"
         }
       })
+
+
+      const showresult2=document.getElementById("result2")
+      const checkbtnbirthday=document.getElementById("check-button2")
+      const birthdate=document.getElementById("input2")
+      checkbtnbirthday.addEventListener("click",function(){
+        const checkresult=isPrime(Number(birthdate.value));
+        if(checkresult){
+          showresult2.innerHTML="congrats your birthday is prime"
+        }
+        else{
+          showresult2.innerHTML="Nahh your birthday is not prime"
+        }
+      })
+
+
+      function isPrime(num) {
+        if (num<=1){
+          return false;
+        }
+          for(var i=2; i<=Math.sqrt(num); i++) { // sqrtnum+1
+              if(num % i == 0) {
+                  return false;
+              }
+          }
+          return true;
+      }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
       
    
     const fullname = document.getElementById("fullname");
