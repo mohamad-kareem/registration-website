@@ -71,3 +71,8 @@ body{
     width: 30px;
     pointer-events: none;
 }
+.btn button{
+    width: 100px;
+    height: 40px;
+    margin-right: 190px;
+}
