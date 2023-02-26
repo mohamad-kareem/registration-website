@@ -37,5 +37,9 @@ submit.addEventListener("click",(e)=>{
     }; 
     window.location.href = "user.html";
 })
+document.addEventListener("DOMContentLoaded", function(event) {
+    const image = document.getElementById('img');
+    image.classList.add('animated-image');
+  });
 
 }
