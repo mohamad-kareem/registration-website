@@ -27,6 +27,7 @@ submit.addEventListener("click",(e)=>{
         alert("email should contain @,no dashes,dot after @");
         return;
     }
+
     const userdata={
         Fullname:fullname.value,
         Username:username.value,
@@ -34,6 +35,7 @@ submit.addEventListener("click",(e)=>{
         Password:password.value,
         Confirm:confirm.value
     }; 
+    window.location.href = "user.html";
 })
 
 }
