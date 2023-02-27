@@ -25,16 +25,16 @@ window.onload = function () {
       })
 
 
-      const showresult2=document.getElementById("result2")
-      const checkbtnbirthday=document.getElementById("check-button2")
-      const birthdate=document.getElementById("input2")
+      const showresult3=document.getElementById("result3")
+      const checkbtnbirthday=document.getElementById("check-button3")
+      const birthdate=document.getElementById("input3")
       checkbtnbirthday.addEventListener("click",function(){
         const checkresult=isPrime(Number(birthdate.value));
         if(checkresult){
-          showresult2.innerHTML="congrats your birthday is prime"
+          showresult3.innerHTML="congrats your birthday is prime"
         }
         else{
-          showresult2.innerHTML="Nahh your birthday is not prime"
+          showresult3.innerHTML="Nahh your birthday is not prime"
         }
       })
 
@@ -43,7 +43,7 @@ window.onload = function () {
         if (num<=1){
           return false;
         }
-          for(var i=2; i<=Math.sqrt(num); i++) { // sqrtnum+1
+          for(var i=2; i<=Math.sqrt(num); i++) {
               if(num % i == 0) {
                   return false;
               }
@@ -54,6 +54,21 @@ window.onload = function () {
 
 
 
+      const showresult4=document.getElementById("result4")
+      const checkbtnreverse=document.getElementById("check-button4")
+      const stringtoreverse=document.getElementById("input4")
+      checkbtnreverse.addEventListener("click",function(){
+        reversedresult=reverseString(stringtoreverse.value);
+        showresult4.innerHTML=(reversedresult)
+      })
+        function reverseString(str) {
+
+        var chars = str.split('');
+        
+        var reversedChars = chars.reverse();
+        var reversedStr = reversedChars.join('');
+        return reversedStr;
+      }
 
 
 
@@ -63,10 +78,6 @@ window.onload = function () {
 
 
 
-
-
-      
-   
     const fullname = document.getElementById("fullname");
     const username = document.getElementById("username");
     const email = document.getElementById("email");
