@@ -1,4 +1,56 @@
 window.onload = function () {
+  let showip=document.getElementById("input6")
+    let getip=document.getElementById("check-button6")
+    getip.addEventListener("click",function(){
+      fetch("https://api.ipify.org")
+    .then((res)=>res.text())
+    .then((ip)=>{
+      showip.value=ip;
+    })
+    })
+
+    const evenipbtn=document.getElementById("check-button7")
+    const showtheevenresult=document.getElementById("result6")
+    evenipbtn.addEventListener("click",function(){
+      const extractednum=extractonlynums(showip.value)
+    const evenresult=sumevennums(extractednum)
+    showtheevenresult.innerHTML= " "+"The sum of even numbers is :"+" "+evenresult
+
+    })
+
+    
+    function extractonlynums(onlynums){
+      let num=[]
+      let temporary=""
+      for(let i=0;i<onlynums.length;i++){
+        if(onlynums[i]!="."){
+          temporary+=onlynums[i];
+        }
+        else{
+          num.push(parseInt(temporary));
+          temporary="";
+        }
+      }
+      num.push(parseInt(temporary))
+      return num
+
+    }
+
+    function sumevennums(extractednum){
+      let sum=0;
+      for(let i=0;i<extractednum.length;i++){
+        if(extractednum[i]%2===0){
+          sum+=extractednum[i];
+        }
+      }
+      return sum
+    }
+
+
+
+
+
+
     const sortBtn = document.getElementById("sort");
     sortBtn.addEventListener("click", function() {
         let nums = [];
@@ -73,10 +125,29 @@ window.onload = function () {
 
 
 
+      const showresult5=document.getElementById("result5")
+      const checkbtnpig=document.getElementById("check-button5")
+      const stringtopig=document.getElementById("input5")
+      checkbtnpig.addEventListener("click",function(){
+        pigresult=piglatin(stringtopig.value);
+        showresult5.innerHTML=(pigresult)
+      })
+ 
+     //this code was taken from a youtube channel but i understand the code
+      function piglatin(string){
+        const vowels = ['a', 'e', 'i', 'o', 'u'];
+         let consonants = '';
+         let i = 0;
+         while (!vowels.includes(string[i]) && i < string.length) {
+        consonants += string[i];
+        i++;
+              }
+       let newStr = string.slice(i) + consonants;
+        newStr += 'ay';
+       return newStr;
+      }
 
-
-
-
+  
 
     const fullname = document.getElementById("fullname");
     const username = document.getElementById("username");
@@ -152,7 +223,7 @@ window.onload = function () {
         return palindrome_helper(str,start+1,end-1)
     }
 
-
+  
 
 
   
@@ -161,6 +232,13 @@ window.onload = function () {
       image.classList.add("animated-image");
     });
 
+   
+    
+   
+   
+  
+
+    
     
 
 

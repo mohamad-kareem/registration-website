@@ -175,7 +175,7 @@ button:hover{
     
 }
 .text3 p{
-    font-size: 30px;
+    font-size: 25px;
 }
 
 
@@ -214,7 +214,7 @@ button:hover{
 
 .reverse{
     position: absolute;
-   top: 1350px;
+   top: 1390px;
     left: 5%;
     border-radius: 20px;
     width: 50%;
@@ -260,3 +260,105 @@ button:hover{
     color: red;
     font-size: 35px;
 }
+
+
+
+.piglatin{
+    position: absolute;
+   top: 1700px;
+    left: 5%;
+    border-radius: 20px;
+    width: 50%;
+
+    margin-top: 80px;
+    margin-left: 400px;
+    font-size: 40px;
+    height: 100%;
+    
+}
+.text5 p{
+    font-size: 30px;
+}
+
+
+.fifth{
+   
+    background-color: rgb(132, 77, 184);
+    display: flex;
+    border-radius: 20px;
+    font-family:"Poppins" ;
+    margin-top: 40px;
+}
+.piglatin {
+    font-size: 25px;
+}
+
+.piglatin h3{
+    font-size: 40px;
+    
+}
+.piglatin img{
+    padding: 10px;
+}
+
+#input5{
+   
+    height: 40px;
+    width: 200px;
+    font-size: 30px;
+}
+#result5{
+    color: red;
+    font-size: 35px;
+}
+
+
+.ipaddress{
+    position: absolute;
+   top: 2000px;
+    left: 5%;
+    border-radius: 20px;
+    width: 50%;
+
+    margin-top: 80px;
+    margin-left: 400px;
+    font-size: 40px;
+    height: 100%;
+    
+}
+.text6 p{
+    font-size: 30px;
+}
+
+
+.sixth{
+   
+    background-color: rgb(132, 77, 184);
+    display: flex;
+    border-radius: 20px;
+    font-family:"Poppins" ;
+    margin-top: 40px;
+}
+.ipaddress {
+    font-size: 25px;
+}
+
+.ipaddress h3{
+    font-size: 40px;
+    
+}
+.ipaddress img{
+    padding: 10px;
+}
+
+#input6{
+   
+    height: 40px;
+    width: 200px;
+    font-size: 30px;
+}
+#result6{
+    color: red;
+    font-size: 30px;
+}
+
