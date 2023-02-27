@@ -186,6 +186,29 @@ window.onload = function () {
         return palindrome_helper(str,start+1,end-1)
     }
 
+
+  let confirmationbtn =document.getElementById("check-button8")
+  let pos=document.getElementById("loc")
+  confirmationbtn.addEventListener("click",function(){
+      navigator.geolocation.getCurrentPosition(currentpostion)
+  })
+
+
+   function currentpostion(position){
+    const latitude=position.coords.latitude;
+    const logitude=position.coords.logitude;
+    pos.innerHTML="latitude :"+ latitude+"logitude :"+logitude;
+
+   }
+   
+
+
+
+
+
+
+
+
   
 
 

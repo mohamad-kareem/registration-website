@@ -362,3 +362,49 @@ button:hover{
     font-size: 30px;
 }
 
+
+.location{
+    position: absolute;
+    top: 2300px;
+    left: 5%;
+    border-radius: 20px;
+    width: 50%;
+
+    margin-top: 80px;
+    margin-left: 400px;
+    font-size: 40px;
+    height: 100%;
+    
+}
+.text7 p{
+    font-size: 30px;
+}
+
+
+
+.seventh{
+   
+    background-color: rgb(132, 77, 184);
+    display: flex;
+    border-radius: 20px;
+    font-family:"Poppins" ;
+    margin-top: 40px;
+}
+.location {
+    font-size: 25px;
+}
+
+.location h3{
+    font-size: 40px;
+    
+}
+.location img{
+    padding: 10px;
+}
+
+
+#loc{
+    font-size: 25px;
+}
+
+
