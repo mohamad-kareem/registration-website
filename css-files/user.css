@@ -408,3 +408,21 @@ button:hover{
 }
 
 
+.top-page{
+    position: absolute;
+    top: 2600px;
+    left: 20%;
+    border-radius: 20px;
+    width: 50%;
+
+    margin-top: 80px;
+    margin-left: 400px;
+    font-size: 40px;
+    height: 100%;
+    
+}
+.goodbye h1{
+    position: absolute;
+    top: 2800px;
+    left: 20%;
+}

@@ -197,10 +197,29 @@ window.onload = function () {
    function currentpostion(position){
     const latitude=position.coords.latitude;
     const logitude=position.coords.logitude;
-    pos.innerHTML="latitude :"+ latitude+"logitude :"+logitude;
+    pos.innerHTML="latitude :"+ latitude+"---"+"logitude :"+logitude;
 
    }
-   
+
+
+   document.addEventListener("DOMContentLoaded", function() {
+    const veiw = new IntersectionObserver((entries) => {
+      for (let i = 0; i < entries.length; i++) {
+        const entry = entries[i];
+        if (entry.isIntersecting) {
+          alert("this section will show your current location");
+          veiw.unobserve(entry.target);
+        }
+      }
+    });
+    const alertsection = document.getElementById("alert-location");
+    veiw.observe(alertsection);
+  });
+
+   let to_the_top=document.getElementById("top")
+   to_the_top.addEventListener("click",function(){
+    window.scrollTo({top:0,behavior:"smooth"});
+   })
 
 
 
@@ -208,11 +227,6 @@ window.onload = function () {
 
 
 
-
-  
-
-
-  
     document.addEventListener("DOMContentLoaded", function (event) {
       const image = document.getElementById("img");
       image.classList.add("animated-image");
