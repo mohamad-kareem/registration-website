@@ -105,11 +105,9 @@ body{
 button:hover{
     transform: scale(1.3);
 }
-
-
-
-
-
+#check-button6,#check-button7{
+    width: 130px;
+}
 
 .string {
     position: relative;
@@ -125,7 +123,7 @@ button:hover{
     
 }
 .text2 p{
-    font-size: 30px;
+    font-size: 27px;
 }
 
 
@@ -154,7 +152,7 @@ button:hover{
 }
 #result{
     color: red;
-    font-size: 35px;
+    font-size: 30px;
 }
 
 
@@ -207,7 +205,7 @@ button:hover{
 }
 #result3{
     color: red;
-    font-size: 35px;
+    font-size: 30px;
 }
 
 
@@ -258,7 +256,7 @@ button:hover{
 }
 #result4{
     color: red;
-    font-size: 35px;
+    font-size: 33px;
 }
 
 
@@ -277,8 +275,9 @@ button:hover{
     
 }
 .text5 p{
-    font-size: 30px;
+    font-size: 25px;
 }
+
 
 
 .fifth{
@@ -309,7 +308,7 @@ button:hover{
 }
 #result5{
     color: red;
-    font-size: 35px;
+    font-size: 30px;
 }
 
 
@@ -320,7 +319,7 @@ button:hover{
     border-radius: 20px;
     width: 50%;
 
-    margin-top: 80px;
+    margin-top: 70px;
     margin-left: 400px;
     font-size: 40px;
     height: 100%;
@@ -420,9 +419,4 @@ button:hover{
     font-size: 40px;
     height: 100%;
     
-}
-.goodbye h1{
-    position: absolute;
-    top: 2800px;
-    left: 20%;
 }
