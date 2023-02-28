@@ -162,7 +162,7 @@ window.onload = function () {
     pos.innerHTML="latitude :"+ latitude+"---"+"logitude :"+logitude;
 
    }
-   document.addEventListener("DOMContentLoaded", function() {
+   
     const veiw = new IntersectionObserver((entries) => {
       for (let i = 0; i < entries.length; i++) {
         const entry = entries[i];
@@ -174,7 +174,7 @@ window.onload = function () {
     });
     const alertsection = document.getElementById("alert-location");
     veiw.observe(alertsection);
-  });
+  
 
    let to_the_top=document.getElementById("top")
    to_the_top.addEventListener("click",function(){
