@@ -11,8 +11,6 @@ body{
 	background-position: center;
 	background-size: cover;
 	position: absolute;
-    
-    
 }
 .block{
     display: flex;
@@ -33,29 +31,23 @@ body{
     gap: 25px;
     box-shadow: -5px -5px 15px purple,
     5px 5px 15px rgb(46, 39, 26);
-    ;
-
 }
 .form:hover{
     box-shadow: 0 0 20px black;
 }
 .form h1{
-
     color:rgb(71, 43, 71);
     letter-spacing: 2px;
 }
 .input{
     position: relative;
     width: 300px;
-
 }
 .input input{
     width: 100%;
     padding: 10px;
     border-radius: 20px;
     border-color: blueviolet;
-    
-
 }
 .block .form .input span{
     position: absolute;
@@ -78,7 +70,6 @@ body{
     height: 40px;
     margin-right: 190px;
 }
-
 .block .form .input input:valid~span,
 .block .form .input input:focus~span{
     color: purple;
