@@ -34,6 +34,8 @@ submit.addEventListener("click", (e) => {
     Password: password.value,
     Confirm: confirm.value,
   };
+  const userdatajson=JSON.stringify(userdata);
+  console.log(userdatajson)
 });
 
 }

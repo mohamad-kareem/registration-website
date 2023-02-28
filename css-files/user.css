@@ -130,6 +130,12 @@ button:hover{
     color: red;
     font-size: 30px;
 }
+
+.birthday .third .logan img{
+    
+    margin-right: 700px;
+    border-radius: 500px;
+}
 .birthday{
     position: relative;
     top: 10%;
