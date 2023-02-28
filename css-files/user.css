@@ -5,8 +5,6 @@ body{
 	background-position: center;
 	background-size:cover;
 	position: absolute;
-    
-
 }
 .anime {
    position: absolute;
@@ -18,9 +16,7 @@ body{
     font-family:"Poppins" ;
     visibility: hidden;
     animation-delay: 2s;
-  
 }
-
 .anime img{
     padding: 10px;
     border-radius: 40px;
@@ -38,30 +34,24 @@ body{
     animation-delay: 1s;
     animation-iteration-count: infinite;
   }
-  
   @keyframes image-anime {
     0%   { transform: scale(1)  ; }
     50%  { transform: scale(1.2) ; }
     100% { transform: scale(1) ; }
-
   }
-
   .anime {
     animation-name: fade-out, fade-in;
     animation-duration: 6s;
     animation-fill-mode:forwards;
 }
-
 @keyframes fade-out {
     from { opacity: 1; }
     to { opacity: 0; }
 }
-
 @keyframes fade-in {
     from { opacity: 0 ;visibility: visible; }
     to { opacity: 1;visibility: visible; }
 }
-
 .promt {
     position: absolute;
     top: 40%;
@@ -72,22 +62,16 @@ body{
     margin-top: 50px;
     margin-left: 400px;
     font-size: 40px;
-    
 }
 .text1 p{
     font-size: 30px;
 }
-
-
 .first {
-   
     background-color: rgb(132, 77, 184);
     display: flex;
     border-radius: 20px;
     font-family:"Poppins" ;
     margin-top: 40px;}
-
-
 .promt h3{
     font-size: 40px;
     
@@ -108,25 +92,20 @@ button:hover{
 #check-button6,#check-button7{
     width: 130px;
 }
-
 .string {
     position: relative;
     top: 80%;
     left: 5%;
     border-radius: 20px;
     width: 50%;
-
     margin-top: 80px;
     margin-left: 400px;
     font-size: 40px;
     height: 100%;
-    
 }
 .text2 p{
     font-size: 27px;
 }
-
-
 .second{
    
     background-color: rgb(132, 77, 184);
@@ -135,17 +114,14 @@ button:hover{
     font-family:"Poppins" ;
     margin-top: 40px;
 }
-
 .string h3{
-    font-size: 40px;
-    
+    font-size: 40px;  
 }
 .string img{
     padding: 10px;
 }
 
 #input{
-   
     height: 40px;
     width: 200px;
     font-size: 30px;
@@ -154,31 +130,21 @@ button:hover{
     color: red;
     font-size: 30px;
 }
-
-
-
-
-
 .birthday{
     position: relative;
     top: 10%;
     left: 5%;
     border-radius: 20px;
     width: 50%;
-
     margin-top: 80px;
     margin-left: 400px;
     font-size: 40px;
-    height: 100%;
-    
+    height: 100%; 
 }
 .text3 p{
     font-size: 25px;
 }
-
-
 .third{
-   
     background-color: rgb(132, 77, 184);
     display: flex;
     border-radius: 20px;
@@ -196,9 +162,7 @@ button:hover{
 .birthday img{
     padding: 10px;
 }
-
 #input3{
-   
     height: 40px;
     width: 200px;
     font-size: 30px;
@@ -207,9 +171,6 @@ button:hover{
     color: red;
     font-size: 30px;
 }
-
-
-
 .reverse{
     position: absolute;
    top: 1390px;
@@ -221,15 +182,11 @@ button:hover{
     margin-left: 400px;
     font-size: 40px;
     height: 100%;
-    
 }
 .text4 p{
     font-size: 30px;
 }
-
-
 .fourth{
-   
     background-color: rgb(132, 77, 184);
     display: flex;
     border-radius: 20px;
@@ -259,8 +216,6 @@ button:hover{
     font-size: 33px;
 }
 
-
-
 .piglatin{
     position: absolute;
    top: 1700px;
@@ -272,13 +227,10 @@ button:hover{
     margin-left: 400px;
     font-size: 40px;
     height: 100%;
-    
 }
 .text5 p{
     font-size: 25px;
 }
-
-
 
 .fifth{
    

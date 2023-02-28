@@ -47,8 +47,8 @@ nav ul li a
     color: rgb(0, 0, 0);
     font-family: sans-serif;
 }
-.register_btn 
-{
+.register_btn{
+
     font-size: 30px;
     color: rgb(0, 0, 0);
     border:1px solid black;
@@ -60,8 +60,8 @@ nav ul li a
     padding:5px
 }
 
-nav ul li a:hover
-{
+nav ul li a:hover{
+
     color: rgb(126, 32, 181);
     
 }

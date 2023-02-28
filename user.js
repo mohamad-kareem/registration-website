@@ -8,7 +8,6 @@ window.onload = function () {
       showip.value=ip;
     })
     })
-
     const evenipbtn=document.getElementById("check-button7")
     const showtheevenresult=document.getElementById("result6")
     evenipbtn.addEventListener("click",function(){
@@ -17,8 +16,6 @@ window.onload = function () {
     showtheevenresult.innerHTML= " "+"The sum of even numbers is :"+" "+evenresult
 
     })
-
-    
     function extractonlynums(onlynums){
       let num=[]
       let temporary=""
@@ -33,9 +30,7 @@ window.onload = function () {
       }
       num.push(parseInt(temporary))
       return num
-
     }
-
     function sumevennums(extractednum){
       let sum=0;
       for(let i=0;i<extractednum.length;i++){
@@ -45,12 +40,6 @@ window.onload = function () {
       }
       return sum
     }
-
-
-
-
-
-
     const sortBtn = document.getElementById("sort");
     sortBtn.addEventListener("click", function() {
         let nums = [];
@@ -61,8 +50,6 @@ window.onload = function () {
         const sorted_numbers=mergeSortTopDown(nums)
         alert("here's your sorted numbers:"+sorted_numbers)
       });
-
-    
       const checkbtn =document.getElementById("check-button")
       const showresult=document.getElementById("result")
       checkbtn.addEventListener("click",function(){
@@ -75,8 +62,6 @@ window.onload = function () {
             showresult.innerHTML="No it's not a palindrome"
         }
       })
-
-
       const showresult3=document.getElementById("result3")
       const checkbtnbirthday=document.getElementById("check-button3")
       const birthdate=document.getElementById("input3")
@@ -89,8 +74,6 @@ window.onload = function () {
           showresult3.innerHTML="Nahh your birthday is not prime"
         }
       })
-
-
       function isPrime(num) {
         if (num<=1){
           return false;
@@ -102,10 +85,6 @@ window.onload = function () {
           }
           return true;
       }
-
-
-
-
       const showresult4=document.getElementById("result4")
       const checkbtnreverse=document.getElementById("check-button4")
       const stringtoreverse=document.getElementById("input4")
@@ -121,10 +100,6 @@ window.onload = function () {
         var reversedStr = reversedChars.join('');
         return reversedStr;
       }
-
-
-
-
       const showresult5=document.getElementById("result5")
       const checkbtnpig=document.getElementById("check-button5")
       const stringtopig=document.getElementById("input5")
@@ -146,23 +121,16 @@ window.onload = function () {
         newStr += 'ay';
        return newStr;
       }
-
-  
-
-    
-
     function mergeSortTopDown(nums) {
         if(nums.length <= 1) {
             return nums
         }
-    
         const middle = Math.floor(nums.length / 2);
         const left = nums.slice(0, middle);
         const right = nums.slice(middle);
     
         return mergeTopDown(mergeSortTopDown(left), mergeSortTopDown(right))
     }
-    
     function mergeTopDown(left, right) {
         const nums = [];
     
@@ -173,10 +141,8 @@ window.onload = function () {
                 nums.push(right.shift());
             }
         }
-    
         return nums.concat(left.slice()).concat(right.slice());
     }
-    
       function palindrome(str){
       return palindrome_helper(str,0,str.length-1);
       }
@@ -185,23 +151,17 @@ window.onload = function () {
         if(str.charAt(start)!==str.charAt(end)) return false;
         return palindrome_helper(str,start+1,end-1)
     }
-
-
   let confirmationbtn =document.getElementById("check-button8")
   let pos=document.getElementById("loc")
   confirmationbtn.addEventListener("click",function(){
       navigator.geolocation.getCurrentPosition(currentpostion)
   })
-
-
    function currentpostion(position){
     const latitude=position.coords.latitude;
     const logitude=position.coords.logitude;
     pos.innerHTML="latitude :"+ latitude+"---"+"logitude :"+logitude;
 
    }
-
-
    document.addEventListener("DOMContentLoaded", function() {
     const veiw = new IntersectionObserver((entries) => {
       for (let i = 0; i < entries.length; i++) {
@@ -220,13 +180,6 @@ window.onload = function () {
    to_the_top.addEventListener("click",function(){
     window.scrollTo({top:0,behavior:"smooth"});
    })
-
-
-
-
-
-
-
     document.addEventListener("DOMContentLoaded", function (event) {
       const image = document.getElementById("img");
       image.classList.add("animated-image");
