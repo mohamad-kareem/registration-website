@@ -180,6 +180,10 @@ window.onload = function () {
    to_the_top.addEventListener("click",function(){
     window.scrollTo({top:0,behavior:"smooth"});
    })
+  
+   
+
+
     document.addEventListener("DOMContentLoaded", function (event) {
       const image = document.getElementById("img");
       image.classList.add("animated-image");

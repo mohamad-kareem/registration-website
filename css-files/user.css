@@ -130,12 +130,6 @@ button:hover{
     color: red;
     font-size: 30px;
 }
-
-.birthday .third .logan img{
-    
-    margin-right: 700px;
-    border-radius: 500px;
-}
 .birthday{
     position: relative;
     top: 10%;
@@ -367,7 +361,7 @@ button:hover{
 
 .top-page{
     position: absolute;
-    top: 2600px;
+    top: 3000px;
     left: 20%;
     border-radius: 20px;
     width: 50%;
@@ -378,3 +372,47 @@ button:hover{
     height: 100%;
     
 }
+
+.block{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height:180vh;   
+    margin-left: 110px;
+}
+
+.form{
+    border: 2px solid rgb(71, 43, 71);
+    border-radius: 30px;
+    padding: 30px;
+    transition: all 0.1s ease-in-out;
+    box-shadow: -5px -5px 15px purple,
+    5px 5px 15px rgb(46, 39, 26);
+    width: 800px;
+
+}
+.input{
+    position: relative;
+    width: 600px;
+}
+.input input{
+    width: 100%;
+    padding: 10px;
+    border-radius: 20px;
+    border-color: blueviolet;
+}
+.block .form .input span{
+    position: absolute;
+    left: 0;
+    padding-top: 12px;
+    padding-left: 30px;
+    padding-right: 48px;
+    padding-bottom: 10px;
+    pointer-events: none;   
+}
+.btn button{
+    width: 100px;
+    height: 40px;
+    margin-right: 190px;
+}
+
