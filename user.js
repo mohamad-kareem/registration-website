@@ -180,6 +180,31 @@ window.onload = function () {
    to_the_top.addEventListener("click",function(){
     window.scrollTo({top:0,behavior:"smooth"});
    })
+
+
+
+   class Course{
+    constructor(fullname, creditsnumber, coursename, description){
+      this.fullname=fullname
+      this.creditsnumber=creditsnumber
+      this.coursename=coursename
+      this.description=description
+    }
+   }
+   const savebutton=document.querySelector(".btn button");
+   savebutton.addEventListener("click",() =>{
+    const fullnameinput=document.getElementById("fullname")
+    const creditsnumberinput=document.getElementById("credits number")
+    const coursenameinput=document.getElementById("course name")
+    const descriptioninput=document.getElementById("course description")
+      
+    const fullname=fullnameinput.value;
+    const creditsnumber=parseInt(creditsnumberinput.value);
+    const coursename=coursenameinput.value;
+    const description=descriptioninput.value;
+   const course =new Course(fullname,creditsnumber,coursename,description);
+  console.log(course)
+   })
   
    
 

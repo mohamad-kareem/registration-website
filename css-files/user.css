@@ -416,3 +416,11 @@ button:hover{
     margin-right: 190px;
 }
 
+.block .form .input input:valid~span,
+.block .form .input input:focus~span{
+    color: purple;
+    transform: translateX(300px) translateY(-20px);
+    font-size: 12px;
+    border: 1px solid black;
+    padding: 3px;
+}
