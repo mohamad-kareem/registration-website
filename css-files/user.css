@@ -53,27 +53,16 @@ body{
     to { opacity: 1;visibility: visible; }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
+.body h1{
+    font-size: 80px;
+}
 .body{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-top: 500px;
+    margin-top: 300px;
     gap: 100px;
-
-
 }
 
 .promt {
@@ -85,7 +74,7 @@ body{
 .text1 p{
     font-size: 30px;
 }
-.first {
+.design {
     background-color: rgb(132, 77, 184);
     display: flex;
     border-radius: 20px;
@@ -117,13 +106,7 @@ button:hover{
 .text2 p{
     font-size: 27px;
 }
-.second{
-    background-color: rgb(132, 77, 184);
-    display: flex;
-    border-radius: 20px;
-    font-family:"Poppins" ;
-    margin-top: 40px;
-}
+
 .string h3{
     font-size: 40px;  
 }
@@ -147,12 +130,7 @@ button:hover{
 .text3 p{
     font-size: 25px;
 }
-.third{
-    background-color: rgb(132, 77, 184);
-    display: flex;
-    border-radius: 20px;
-    font-family:"Poppins" ;
-}
+
 .birthday {
     font-size: 25px;
 }
@@ -180,12 +158,7 @@ button:hover{
 .text4 p{
     font-size: 30px;
 }
-.fourth{
-    background-color: rgb(132, 77, 184);
-    display: flex;
-    border-radius: 20px;
-    font-family:"Poppins" ;
-}
+
 .reverse {
     font-size: 25px;
 }
@@ -212,12 +185,7 @@ button:hover{
 .text5 p{
     font-size: 25px;
 }
-.fifth{
-    background-color: rgb(132, 77, 184);
-    display: flex;
-    border-radius: 20px;
-    font-family:"Poppins" ;
-}
+
 .piglatin {
     font-size: 25px;
 }
@@ -245,13 +213,7 @@ button:hover{
 .text6 p{
     font-size: 30px;
 }
-.sixth{
-   
-    background-color: rgb(132, 77, 184);
-    display: flex;
-    border-radius: 20px;
-    font-family:"Poppins" ;
-}
+
 .ipaddress {
     font-size: 25px;
 }
@@ -279,13 +241,6 @@ button:hover{
     font-size: 30px;
 }
 
-.seventh{
-    background-color: rgb(132, 77, 184);
-    display: flex;
-    border-radius: 20px;
-font-family:"Poppins" ;
-
-}
 .location {
     font-size: 25px;
 }
@@ -298,27 +253,16 @@ font-family:"Poppins" ;
 #loc{
     font-size: 25px;
 }
-.top-page{
-    border-radius: 20px;
-    width: 50%;
-    height: 100%;
-    font-size: 40px;
-}
 
 form{
     border-radius: 20px;
-    width: 50%;
-    height: 100%;
-    font-size: 40px;
+    font-size: 20px;
 }
 .block{
     display: flex;
     justify-content: center;
     align-items: center;
-    
-    
 }
-
 .form{
     border: 2px solid rgb(71, 43, 71);
     border-radius: 30px;
@@ -327,10 +271,8 @@ form{
     box-shadow: -5px -5px 15px purple,
     5px 5px 15px rgb(46, 39, 26);
     width: 800px;
-
 }
 .input{
-
     width: 600px;
 }
 .input input{
@@ -356,4 +298,9 @@ form{
     font-size: 12px;
     border: 1px solid black;
     padding: 3px;
+}
+.top-page{
+    border-radius: 20px;
+    font-size: 40px;
+    margin-bottom: 15px;
 }

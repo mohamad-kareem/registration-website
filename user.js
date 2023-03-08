@@ -1,4 +1,5 @@
 window.onload = function () {
+  anime()
   let showip=document.getElementById("input6")
     let getip=document.getElementById("check-button6")
     getip.addEventListener("click",function(){
@@ -204,6 +205,7 @@ window.onload = function () {
     const description=descriptioninput.value;
    const course =new Course(fullname,creditsnumber,coursename,description);
   console.log(course)
+  alert("Course saved")
    })
   
    
@@ -213,6 +215,15 @@ window.onload = function () {
       const image = document.getElementById("img");
       image.classList.add("animated-image");
     });
+
+    
+
+
+ function anime() {
+      const h1 = document.querySelector('.head-anime');
+      h1.style.transform = 'rotateY(360deg)';
+      h1.style.transition = 'transform 2s ease-in-out';
+    }
     
   };
  
