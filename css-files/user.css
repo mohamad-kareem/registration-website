@@ -271,7 +271,6 @@ form{
     transition: all 0.1s ease-in-out;
     box-shadow: -5px -5px 15px purple,
     5px 5px 15px rgb(46, 39, 26);
-    width: 800px;
 }
 .input{
     width: 600px;
