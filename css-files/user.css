@@ -52,15 +52,34 @@ body{
     from { opacity: 0 ;visibility: visible; }
     to { opacity: 1;visibility: visible; }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+.body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 500px;
+    gap: 100px;
+
+
+}
+
 .promt {
-    position: absolute;
-    top: 40%;
-    left: 5%;
     border-radius: 20px;
-    width: 40%;
+    width: 50%;
     height: 100%;
-    margin-top: 50px;
-    margin-left: 400px;
     font-size: 40px;
 }
 .text1 p{
@@ -71,20 +90,17 @@ body{
     display: flex;
     border-radius: 20px;
     font-family:"Poppins" ;
-    margin-top: 40px;}
+    }
 .promt h3{
     font-size: 40px;
-    
 }
 .promt img{
     padding: 10px;
 }
  button{
     width: 150px;
-    height: 50px;
     background-color: rgb(136, 99, 170);
     border-radius: 30px;
-    margin-bottom: 10px;
 }
 button:hover{
     transform: scale(1.3);
@@ -93,21 +109,15 @@ button:hover{
     width: 130px;
 }
 .string {
-    position: relative;
-    top: 80%;
-    left: 5%;
     border-radius: 20px;
     width: 50%;
-    margin-top: 80px;
-    margin-left: 400px;
-    font-size: 40px;
     height: 100%;
+    font-size: 40px;
 }
 .text2 p{
     font-size: 27px;
 }
 .second{
-   
     background-color: rgb(132, 77, 184);
     display: flex;
     border-radius: 20px;
@@ -120,9 +130,7 @@ button:hover{
 .string img{
     padding: 10px;
 }
-
 #input{
-    height: 40px;
     width: 200px;
     font-size: 30px;
 }
@@ -131,15 +139,10 @@ button:hover{
     font-size: 30px;
 }
 .birthday{
-    position: relative;
-    top: 10%;
-    left: 5%;
     border-radius: 20px;
     width: 50%;
-    margin-top: 80px;
-    margin-left: 400px;
+    height: 100%;
     font-size: 40px;
-    height: 100%; 
 }
 .text3 p{
     font-size: 25px;
@@ -149,12 +152,10 @@ button:hover{
     display: flex;
     border-radius: 20px;
     font-family:"Poppins" ;
-    margin-top: 40px;
 }
 .birthday {
     font-size: 25px;
 }
-
 .birthday h3{
     font-size: 40px;
     
@@ -163,7 +164,6 @@ button:hover{
     padding: 10px;
 }
 #input3{
-    height: 40px;
     width: 200px;
     font-size: 30px;
 }
@@ -172,16 +172,10 @@ button:hover{
     font-size: 30px;
 }
 .reverse{
-    position: absolute;
-   top: 1390px;
-    left: 5%;
     border-radius: 20px;
     width: 50%;
-
-    margin-top: 80px;
-    margin-left: 400px;
-    font-size: 40px;
     height: 100%;
+    font-size: 40px;
 }
 .text4 p{
     font-size: 30px;
@@ -191,23 +185,17 @@ button:hover{
     display: flex;
     border-radius: 20px;
     font-family:"Poppins" ;
-    margin-top: 40px;
 }
 .reverse {
     font-size: 25px;
 }
-
 .reverse h3{
     font-size: 40px;
-    
 }
 .reverse img{
     padding: 10px;
 }
-
 #input4{
-   
-    height: 40px;
     width: 200px;
     font-size: 30px;
 }
@@ -215,45 +203,31 @@ button:hover{
     color: red;
     font-size: 33px;
 }
-
 .piglatin{
-    position: absolute;
-   top: 1700px;
-    left: 5%;
     border-radius: 20px;
     width: 50%;
-
-    margin-top: 80px;
-    margin-left: 400px;
-    font-size: 40px;
     height: 100%;
+    font-size: 40px;
 }
 .text5 p{
     font-size: 25px;
 }
-
 .fifth{
-   
     background-color: rgb(132, 77, 184);
     display: flex;
     border-radius: 20px;
     font-family:"Poppins" ;
-    margin-top: 40px;
 }
 .piglatin {
     font-size: 25px;
 }
-
 .piglatin h3{
     font-size: 40px;
-    
 }
 .piglatin img{
     padding: 10px;
 }
-
 #input5{
-   
     height: 40px;
     width: 200px;
     font-size: 30px;
@@ -262,49 +236,32 @@ button:hover{
     color: red;
     font-size: 30px;
 }
-
-
 .ipaddress{
-    position: absolute;
-   top: 2000px;
-    left: 5%;
     border-radius: 20px;
     width: 50%;
-
-    margin-top: 70px;
-    margin-left: 400px;
-    font-size: 40px;
     height: 100%;
-    
+    font-size: 40px;
 }
 .text6 p{
     font-size: 30px;
 }
-
-
 .sixth{
    
     background-color: rgb(132, 77, 184);
     display: flex;
     border-radius: 20px;
     font-family:"Poppins" ;
-    margin-top: 40px;
 }
 .ipaddress {
     font-size: 25px;
 }
-
 .ipaddress h3{
-    font-size: 40px;
-    
+    font-size: 40px; 
 }
 .ipaddress img{
     padding: 10px;
 }
-
-#input6{
-   
-    height: 40px;
+#input6{ 
     width: 200px;
     font-size: 30px;
 }
@@ -312,73 +269,54 @@ button:hover{
     color: red;
     font-size: 30px;
 }
-
-
 .location{
-    position: absolute;
-    top: 2300px;
-    left: 5%;
     border-radius: 20px;
     width: 50%;
-
-    margin-top: 80px;
-    margin-left: 400px;
-    font-size: 40px;
     height: 100%;
-    
+    font-size: 40px;  
 }
 .text7 p{
     font-size: 30px;
 }
 
-
-
 .seventh{
-   
     background-color: rgb(132, 77, 184);
     display: flex;
     border-radius: 20px;
-    font-family:"Poppins" ;
-    margin-top: 40px;
+font-family:"Poppins" ;
+
 }
 .location {
     font-size: 25px;
 }
-
 .location h3{
-    font-size: 40px;
-    
+    font-size: 40px;  
 }
 .location img{
     padding: 10px;
 }
-
-
 #loc{
     font-size: 25px;
 }
-
-
 .top-page{
-    position: absolute;
-    top: 3000px;
-    left: 20%;
     border-radius: 20px;
     width: 50%;
-
-    margin-top: 80px;
-    margin-left: 400px;
-    font-size: 40px;
     height: 100%;
-    
+    font-size: 40px;
 }
 
+form{
+    border-radius: 20px;
+    width: 50%;
+    height: 100%;
+    font-size: 40px;
+}
 .block{
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height:180vh;   
-    margin-left: 110px;
+    
+    
 }
 
 .form{
@@ -392,7 +330,7 @@ button:hover{
 
 }
 .input{
-    position: relative;
+
     width: 600px;
 }
 .input input{
@@ -402,8 +340,6 @@ button:hover{
     border-color: blueviolet;
 }
 .block .form .input span{
-    position: absolute;
-    left: 0;
     padding-top: 12px;
     padding-left: 30px;
     padding-right: 48px;
@@ -412,10 +348,7 @@ button:hover{
 }
 .btn button{
     width: 100px;
-    height: 40px;
-    margin-right: 190px;
 }
-
 .block .form .input input:valid~span,
 .block .form .input input:focus~span{
     color: purple;
