@@ -1,22 +1,25 @@
 window.onload = function () {
   anime()
-  let showip=document.getElementById("input6")
+    
+  
+    let showip=document.getElementById("input6")
     let getip=document.getElementById("check-button6")
     getip.addEventListener("click",function(){
-      fetch("https://api.ipify.org")
+    fetch("https://api.ipify.org")
     .then((res)=>res.text())
     .then((ip)=>{
       showip.value=ip;
     })
     })
-    const evenipbtn=document.getElementById("check-button7")
+    
+    evenipbtn=document.getElementById("check-button7")
     const showtheevenresult=document.getElementById("result6")
     evenipbtn.addEventListener("click",function(){
-      const extractednum=extractonlynums(showip.value)
+    const extractednum=extractonlynums(showip.value)
     const evenresult=sumevennums(extractednum)
     showtheevenresult.innerHTML= " "+"The sum of even numbers is :"+" "+evenresult
-
     })
+
     function extractonlynums(onlynums){
       let num=[]
       let temporary=""
@@ -75,38 +78,39 @@ window.onload = function () {
           showresult3.innerHTML="Nahh your birthday is not prime"
         }
       })
+
       function isPrime(num) {
         if (num<=1){
           return false;
         }
           for(var i=2; i<=Math.sqrt(num); i++) {
               if(num % i == 0) {
-                  return false;
+           return false;
               }
-          }
-          return true;
+          } return true;
       }
       const showresult4=document.getElementById("result4")
       const checkbtnreverse=document.getElementById("check-button4")
       const stringtoreverse=document.getElementById("input4")
       checkbtnreverse.addEventListener("click",function(){
-        reversedresult=reverseString(stringtoreverse.value);
-        showresult4.innerHTML=(reversedresult)
+      reversedresult=reverseString(stringtoreverse.value);
+      showresult4.innerHTML=(reversedresult)
       })
-        function reverseString(str) {
-
-        var chars = str.split('');
+      
+      function reverseString(str) {
         
+        var chars = str.split('');
         var reversedChars = chars.reverse();
         var reversedStr = reversedChars.join('');
         return reversedStr;
       }
+      
       const showresult5=document.getElementById("result5")
       const checkbtnpig=document.getElementById("check-button5")
       const stringtopig=document.getElementById("input5")
       checkbtnpig.addEventListener("click",function(){
-        pigresult=piglatin(stringtopig.value);
-        showresult5.innerHTML=(pigresult)
+      pigresult=piglatin(stringtopig.value);
+      showresult5.innerHTML=(pigresult)
       })
  
      //this code was taken from a youtube channel but i understand the code
@@ -115,27 +119,28 @@ window.onload = function () {
          let consonants = '';
          let i = 0;
          while (!vowels.includes(string[i]) && i < string.length) {
-        consonants += string[i];
-        i++;
+           consonants += string[i];
+           i++;
               }
-       let newStr = string.slice(i) + consonants;
-        newStr += 'ay';
-       return newStr;
-      }
-    function mergeSortTopDown(nums) {
-        if(nums.length <= 1) {
+         let newStr = string.slice(i) + consonants;
+         newStr += 'ay';
+         return newStr;
+         }
+    
+      function mergeSortTopDown(nums) {
+          if(nums.length <= 1) {
             return nums
         }
         const middle = Math.floor(nums.length / 2);
         const left = nums.slice(0, middle);
         const right = nums.slice(middle);
-    
         return mergeTopDown(mergeSortTopDown(left), mergeSortTopDown(right))
-    }
+        }
+    
+    
     function mergeTopDown(left, right) {
         const nums = [];
-    
-        while (left.length && right.length) {
+         while (left.length && right.length) {
             if(left[0]< right[0]) {
                 nums.push(left.shift());
             } else {
@@ -144,7 +149,10 @@ window.onload = function () {
         }
         return nums.concat(left.slice()).concat(right.slice());
     }
-      function palindrome(str){
+      
+    
+    
+    function palindrome(str){
       return palindrome_helper(str,0,str.length-1);
       }
     function palindrome_helper(str,start,end){
@@ -152,11 +160,16 @@ window.onload = function () {
         if(str.charAt(start)!==str.charAt(end)) return false;
         return palindrome_helper(str,start+1,end-1)
     }
-  let confirmationbtn =document.getElementById("check-button8")
-  let pos=document.getElementById("loc")
-  confirmationbtn.addEventListener("click",function(){
-      navigator.geolocation.getCurrentPosition(currentpostion)
-  })
+
+
+
+     let confirmationbtn =document.getElementById("check-button8")
+     let pos=document.getElementById("loc")
+     confirmationbtn.addEventListener("click",function(){
+     navigator.geolocation.getCurrentPosition(currentpostion)
+     })
+
+
    function currentpostion(position){
     const latitude=position.coords.latitude;
     const logitude=position.coords.logitude;
@@ -207,18 +220,10 @@ window.onload = function () {
   console.log(course)
   alert("Course saved")
    })
-  
-   
-
-
     document.addEventListener("DOMContentLoaded", function (event) {
       const image = document.getElementById("img");
       image.classList.add("animated-image");
     });
-
-    
-
-
  function anime() {
       const h1 = document.querySelector('.head-anime');
       h1.style.transform = 'rotateY(360deg)';
