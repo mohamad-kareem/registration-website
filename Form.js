@@ -17,6 +17,10 @@ submit.addEventListener("click", (e) => {
     alert("email should contain @,no dashes,dot after @");
     return;
   }
+  if (password.value !== confirm.value) {
+    alert("Password and confirm password do not match");
+    return;
+  }
   function passwordvalidation(password) {
     const exp = /^(?=.*\d)(?=.*[!@#$%^&*])(?=.*[a-z])(?=.*[A-Z]).{8,}$/;
     return exp.test(password);
